@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h2>Novo teste:</h2>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/papeldeparede-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/papeldeparede-700.jpg" type="image/jpg">
+        <img src="imagens/papeldeparede-1000.jpg" alt="imagem flexivel"> 
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Danosongs.mp3" controls></audio> <!--autoplay para começar automaticamente-->
+    <!--MP3/WAV/OGG-->
+    <h2>Podcast</h2>
+    <audio preload="metadata" controls> <!--loop para recomeçar a música, não recomendado-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!--Evitar Wav-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o aquivo MP3</a></p>
+    </audio> 
+    <!--Preload="auto" só vai considerar que o site terminou de carregar, depois que carregar todo o audio também.
+    preload="metadata" vai carregar só o nome do arquivo, algumas informações, tipo data, duração.
+    preload="none", ele não vai carregar absolutamete nada. -->
+     
+</body>
+</html>

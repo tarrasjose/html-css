@@ -1,0 +1,21 @@
+#titulo {
+    background-color: rgb(7, 43, 174);
+    width: 400px;
+    margin:auto;
+    
+}
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.especial::before {
+    content: 'Enfim chegou!😀 ';
+}
