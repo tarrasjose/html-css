@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td {
+            border: 1px solid red;
+            padding: 8px;
+            
+        }
+
+        table {
+            width: 300px;
+            /*border-collapse: separate; 
+            Automaticamente vem separadas normal*/
+            border-collapse: collapse;
+            /*Collapse se juntam como uma tabela do excel*/
+            border: 5px solid blue;
+        }
+
+        .linha {
+            background-color: rgba(165, 42, 42, 0.499);
+        }
+
+        .dado {
+            background-color:rebeccapurple;
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (SIMPLES)
+        TABLE=Tabela
+            TABLE ROW(tr)= Linha de tabela
+                TABLE HEADER= Cabeçalho de tabela
+                TABLE DATA(td)= Dado de tabela
+    -->
+    <table>
+        <tr><!--primeira linha-->
+            <td>A1</td> <!--W3C coloca como opcional o fechando dessas tags, mas por segurança prefiro usar, se errar uma vai pra dentro da outra-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha"><!--segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr><!--terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="linha"><!--quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td class="dado">C4</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
